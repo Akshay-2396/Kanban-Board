@@ -18,7 +18,7 @@ export default function TaskCard({ status, task }) {
     position: transform ? "absolute" : "relative",
     width: "auto",
     height: "auto",
-    minWidth: "350px",
+    minWidth: "250px",
   };
 
   const getCardColor = () => {
@@ -39,13 +39,13 @@ export default function TaskCard({ status, task }) {
       <div
         ref={setNodeRef}
         style={style}
-        className={`text-black p-2 rounded shadow relative  ${getCardColor()}`}
+        className={`text-black p-2 rounded shadow relative w-full sm:w-[90%]  md:w-[80%]  lg:w-[70%]  xl:w-[60%]     ${getCardColor()}`}
       >
         {/* Drag Handle  */}
         <div
           {...listeners}
           {...attributes}
-          className="absolute top-1 right-1 text-gray-500 cursor-grab "
+          className="absolute top-1 right-1 text-gray-500 cursor-grab  "
           title="Drag task"
         >
           ⠿

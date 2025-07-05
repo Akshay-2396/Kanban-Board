@@ -37,16 +37,16 @@ export default function Column({ status, tasks }) {
   };
 
   return (
-    <div className="flex-1 min-w-[300px]  ">
+    <div className="flex-1 min-w-[250px] sm:min-w[300px] md:min-w-[350px]   ">
       <h2
         style={{ fontFamily: "Poppins,sans-serif" }}
         className={`text-lg font-bold text-white mb-2 text-center py-2 rounded-t ${getTitleColor()}`}
       >
         {status}
       </h2>
-      <div className="flex flex-col bg-white rounded-b p-2 pt-2 pb-2 h-[75vh]">
+      <div className="flex flex-col bg-white rounded-b p-2 pt-2 pb-2 h-[75vh] ">
         <div
-          className=" flex-grow overflow-y-auto space-y-2 scrollbar-hide "
+          className=" flex-grow overflow-y-auto space-y-2 scrollbar-hide"
           ref={setNodeRef}
         >
           {sortedTasks.map((task) => (
