@@ -37,7 +37,7 @@ export default function TaskForm() {
     
       <form
         onSubmit={handleSubmit}
-        className=" rounded-t  w-70 p-1 h-[75vh] overflow-y-auto scorllbar-hide "
+        className=" rounded-t  w-full p-1 h-[75vh] overflow-y-auto scorllbar-hide "
       >
         <div className="text-black ">
           <input

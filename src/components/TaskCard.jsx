@@ -47,6 +47,7 @@ export default function TaskCard({ status, task }) {
           {...attributes}
           className="absolute top-1 right-1 text-gray-500 cursor-grab  "
           title="Drag task"
+          style={{fontsize:"24px",width:"32px",height:"32px"}}
         >
           ⠿
         </div>
